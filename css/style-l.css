@@ -1,0 +1,283 @@
+/*####版面設計####*/
+
+body {
+	margin :0px 0px;
+	font-family: calibri light, '微軟正黑體', sans-serif;
+
+}
+
+
+
+
+/*L-size bigger than980px; m-size 640~979px; s-size smaller than 639px*/
+
+#container-fluid{
+	width: 568px;
+	margin: auto;
+}
+
+header {
+	margin-bottom: 10px;
+	overflow: hidden;
+}
+
+
+button#showRightPush {
+    width: 30px;
+    height: 22px;
+    display: block;
+    background: none;
+    border: none;
+    background: url(../images/bg_nav_header.png) no-repeat;
+    background-size: 30px 22px;
+    font-size: 0;
+    text-indent: -9999px;
+    float: right;
+    margin: 32px 50px 0 0;
+}
+
+
+/* overflow:hidden 將多的區塊隱藏，版面比較好看 */
+
+#Toppost{
+	margin-bottom: 100px;
+	overflow: hidden;
+}
+
+#oldnews {
+    margin-bottom: 30px;
+    overflow: hidden;
+}
+
+footer {
+    margin-bottom: 30px;
+    font-family: MontserratRegular
+}
+
+
+
+
+
+
+
+
+
+/*細節*/
+/*header logo*/
+
+#site{
+	float: left;
+}
+#site h1{
+	margin:0;
+}
+
+
+
+
+
+
+/* vertical-align: bottom 對齊底部，比較好看 */
+/* container設960，三分法原則，site img 設300-360都蠻好看的 */
+
+
+
+
+
+
+/* HEADER NAV */
+/* 可用google font 尋找喜歡的瀏覽器字體 https://fonts.google.com/ */
+/* padding和margin差異可看講義*/
+
+nav{
+	float: right;
+	font-size: 15px;
+    font-family: 'Roboto', sans-serif;
+    padding-top: 30px;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* list-style-type: none 可把原本有序列表的點點取消*/
+
+nav li {
+    list-style-type: none;
+    float: left;
+}
+
+
+/* 用CSS做選單!!!這邊先暫且依樣畫葫蘆，之後會教大家Bootstrap，就不用用CSS刻很久了*/
+
+
+/*  display: block 每個連結字體以區塊顯示*/
+
+
+/*  float: left margin-top 連結字體靠左向上對齊*/
+
+
+/*  text-decoration: none 取消底線*/
+
+
+/*  border-bottom: solid 3px transparent 製作一個透明的下底線*/
+
+
+/*  color請參考CSS色碼對照表 https://www.toodoo.com/db/color.html */
+
+nav li a {
+    display: block;
+    float: left;
+    margin-left: 20px;
+    margin-top: 20px;
+    text-decoration: none;
+    border-bottom: solid 3px transparent;
+    color: #000000;
+}
+
+
+/*  nav li a:hover 當滑鼠在連結文字上徘徊的時候 */
+
+nav li a:hover {
+    border-bottom-color: #444444;
+}
+
+
+/*  HEADERPOST 圖片*/
+
+
+/* vertical-align: bottom 對齊底部，比較好看 */
+
+
+/* container設960，三分法原則，headerpost設620-660都蠻好看的 */
+
+main{
+    background-color:   #F5F5F5
+}
+
+#Toppost img {
+    float:center;
+    vertical-align: bottom;
+    max-width: 100%;
+    display:block; 
+    margin:auto;
+}
+
+.topwords h1{
+    font-size: 36px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 40px;
+    line-height: 1.0;
+    font-family: 'MontserratBold', Helvetica;
+    margin: 0px auto
+    text-align: center
+}
+
+.topwords p{
+    max-width: 900px;
+    width: 100%;
+    margin: 0 auto 80px;
+    text-align: center;
+}
+
+
+
+span {
+    font-size: 16px;
+    display: block;
+    margin: 30px 0;
+    text-align: center;
+}
+
+/* ### FOOTER ###*/
+
+footer {
+    background-color: #ffffff;
+    padding: 10px 25px;
+}
+
+footer p {
+    float: center;
+    margin-top: 10px;
+    color: #000000;
+    text-align: center;
+}
+    max-width: 900px;
+    width: 100%;
+    margin: 0 auto 80px;
+    
+}
+
+
+#iconmenu {
+    float: center;
+}
+
+#iconmenu ul {
+    margin: 0;
+    padding: 3px 0 0;
+}
+
+#iconmenu li {
+    display: inline;
+    list-style-type: none;
+}
+
+#iconmenu img {
+    border: none;
+    width: 28px;
+display:block; margin:auto;
+}
+
+#submenu {
+    clear: both;
+    font-family: 'Maven Pro', Helvetica, Arial, san-serif;
+    font-size: 12px;
+    overflow: hidden;
+        text-align: center;
+}
+
+#submenu ul {
+    margin: 5px;
+    padding: 0;
+}
+
+#submenu li {
+    list-style-type: none;
+    float: left;
+}
+
+#submenu li a {
+    display: block;
+    width: auto;
+    border-right: solid 1px #000000;
+    text-align: center;
+    text-decoration: none;
+    color: #00AAAA;
+    font-weight: bold;
+    padding-right: 6px;
+    margin-right: 3px;
+}
+
+#submenu li:last-child a {
+    border: none;
+}
+
+#submenu li+li+li a {
+    border: none;
+}
+
+small {
+    margin: 30px
+    font-size: 12px;
+    font-weight: bold;
+    display: block;
+    color: #000000;
+    margin-top: 10px;
+        text-align: center;
+}
+
+
